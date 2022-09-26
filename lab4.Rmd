@@ -160,7 +160,19 @@ At least one must be different to the ones mentioned above.
 Write in your own words what each code chunk option is doing.
 ```
 
-YOUR ANSWER GOES HERE
+```{r use-multiple-options, eval=TRUE, warning=TRUE}
+
+a <- 5
+b <- 0
+
+if (b == 0) {
+  warning("Division by zero here!")
+}
+
+a + b
+
+```
+I am using two options: the `eval=TRUE` option evaluates the last line of code. The `warning=TRUE` option helps print a warning that might be encountered during running the  code block.
 
 
 ### 1.5. YAML Header and document output options

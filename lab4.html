@@ -542,7 +542,18 @@ least one must be different to the ones mentioned above. Write in your
 own words what each code chunk option is doing.
 </p>
 </div>
-<p>YOUR ANSWER GOES HERE</p>
+<pre class="r"><code>a &lt;- 5
+b &lt;- 0
+
+if (b == 0) {
+  warning(&quot;Division by zero here!&quot;)
+}</code></pre>
+<pre><code>## Warning: Division by zero here!</code></pre>
+<pre class="r"><code>a + b</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>I am using two options: the <code>eval=TRUE</code> option evaluates
+the last line of code. The <code>warning=TRUE</code> option helps print
+a warning that might be encountered during running the code block.</p>
 </div>
 </div>
 <div id="yaml-header-and-document-output-options" class="section level3">
