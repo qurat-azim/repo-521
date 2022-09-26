@@ -89,7 +89,7 @@ To render the HTML files we are going to create, the first step is to activate G
 
 ```
 
-YOUR ANSWER GOES HERE
+https://qurat-azim.github.io/repo-521/
 
 ```{block, type="alert alert-info"}
 #### Question 2
@@ -133,7 +133,9 @@ Create a new code chunk that uses a code chunk option.
 Write out in your own words what the code chunk option is doing.
 ```
 
-YOUR ANSWER GOES HERE
+```{r use-another-code-chunk}
+
+```
 
 
 ####  Multiple code chunk options
