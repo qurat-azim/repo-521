@@ -101,7 +101,11 @@ but it should have an output).
 Ensure that you can render/knit the document after you add that chunk.
 ```
 
-YOUR ANSWER GOES HERE
+```{R}
+a <- 1
+b <- 3
+a + b
+```
 
 ```{block, type="alert alert-info"}
 #### Question 3
@@ -114,7 +118,12 @@ Don't forget to knit/render the document
 after you make this change to ensure everything is still working.
 ```
 
-YOUR ANSWER GOES HERE
+``` {r code-chunk-for-q2-mutiply-numbers}
+
+a <- 3
+b <- 5
+print(a *b)
+```
 
 ```{block, type="alert alert-info"}
 #### Question 4
