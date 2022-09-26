@@ -133,9 +133,13 @@ Create a new code chunk that uses a code chunk option.
 Write out in your own words what the code chunk option is doing.
 ```
 
-```{r use-another-code-chunk}
+```{r use-an-option, eval=TRUE}
+
+5 * 15
 
 ```
+
+The code chunk option is evaluating the computation in this code chuck. I am using `eval=TRUE` as my option and this evaluates the results of the code placed in the chunk. If I remove this option, the reults of `5 * 15` will not be evaluated or printed.
 
 
 ####  Multiple code chunk options
