@@ -299,7 +299,7 @@ rubric={mechanics:1,reasoning:1}
    What do you see? How is it rendered?
 ```
 
-YOUR ANSWER GOES HERE
+https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_qazim1/blob/master/Q9-Task.md
 
 ```{block, type="alert alert-info"}
 #### Question 10
@@ -341,4 +341,16 @@ for presentations and reports.
 Include advantages and disadvantages for each.
 ```
 
-YOUR ANSWER GOES HERE
+Reproducible tools are the tools that contain the text as well as the code needed to render outputs (such as data, figures, plots etc) in the report or presentation itself. On the other hand, nonreproducible tools are usually only text friendly and import more advanced graphs, plots etc from external sources to be included in a presentation or report. I would compare and contrast the two tools as follows:
+
+1. Reproducible tools work better for reports and presentations that are recycled over time. That is, if a new report similar to a previous one is to be generated using updated data, then this could be done with reproducible tools using minimal effort. On the other  hand, with nonreproducible tools, one might have to copy/passte/insert new figures/findings one-by-one each time a report needs to  updated.
+
+2. The very main idea that reproducible tools combine text with code, makes using them more advantageous as we do not have to switch between software often.
+
+3. The downside of reproducible tools may be that they provide limited presentation and visual options.
+
+4. Another disadvantage of reproducible tools over nonreproducible ones is the somewhat difficulty of use. Nonreproducible tools are generally more user friendly. That is, usage of nonreproducible tools comes more naturally than for reproducible ones.
+
+5. There might be limited visual help with reproducible tools along the way. That is, they may need rendering every so often to see what the outcome would look like. However, with the nonreproducible tools, the outcome is exactly what and how we are typing in.
+
+
