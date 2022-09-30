@@ -1,0 +1,51 @@
+---
+title: "Rmd  file for Q7"
+author: "Qurat-ul-Ain Azim"
+date: "2022-09-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## My Pancake Recipe
+
+### Ingredients
+
+-   1 cup flour
+
+-   1 cup milk
+
+-   1 egg
+
+-   2 tsp baking powder
+
+-   2 pinches of salt
+
+-   2 tbsp oil or melted butter
+
+-   2 tbsp sugar
+
+### Method
+
+Mix all dry ingredients and then add in all wet. This will yield 1.5 cups of batter Mix again. Spoon fourth cup fulls on a heated non-stick pan. Flip when bubbles apper. Cook on the other side for a minute. Take off the pan and enjoy
+
+```{r measurements}
+batter_quantity <- function(n_batches) {
+  return(n_batches * 1.5)
+}
+batter_quantity(3)
+```
+
+## Measuring Flour
+
+The best way to measure flour for pancakes and cakes is to sccop out using cups and then level with a knife. ! cup of flour should equal 120 grams on scale. Below, we convert flour from cups to grams.
+
+```{r}
+cup_to_gram <- function(cups) {
+  return(cups * 120)
+}
+cup_to_gram(5)
+```
+

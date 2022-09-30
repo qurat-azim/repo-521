@@ -11,9 +11,9 @@
 
 <meta name="author" content="Qurat-ul-Ain Azim" />
 
-<meta name="date" content="2022-10-01" />
+<meta name="date" content="2022-09-30" />
 
-<title>Lab 4 - Introduction to RStudio and R Markdown. Presentations</title>
+<title>Rmd file for Q7</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -356,406 +356,50 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Lab 4 - Introduction to RStudio and R
-Markdown. Presentations</h1>
+<h1 class="title toc-ignore">Rmd file for Q7</h1>
 <h4 class="author">Qurat-ul-Ain Azim</h4>
-<h4 class="date">October 1, 2022</h4>
+<h4 class="date">2022-09-30</h4>
 
 </div>
 
-<div id="TOC">
-<ul>
-<li><a href="#editing-r-markdown-documents" id="toc-editing-r-markdown-documents">Editing R Markdown documents</a>
-<ul>
-<li><a href="#text-and-rendering-r-markdown-documents" id="toc-text-and-rendering-r-markdown-documents">Text and rendering R
-Markdown documents</a></li>
-<li><a href="#yaml-header-and-document-output-options" id="toc-yaml-header-and-document-output-options">1.5. YAML Header and
-document output options</a></li>
-<li><a href="#creating-r-markdown-documents" id="toc-creating-r-markdown-documents">Creating R Markdown
-documents</a></li>
-</ul></li>
-</ul>
-</div>
 
-<!-- This is a comment in R Markdown (and regular markdown, such as in Jupyter)-->
-<!-- The dashes below are not part of the YAML block above, -->
-<!-- they insert a horizontal line after the ToC -->
-<hr />
-<p>In Lab 4, you will learn how to use, edit and create a R Markdown
-document (like this one) using RStudio. You should follow the
-instructions in this document to complete the assignment. Knit this
-document to view the nicely rendered HTML, which can make it easier to
-read the questions.</p>
-<p>If you need help as you use R Markdown in this lab and others in the
-future, consult the following resources:</p>
+<div id="my-pancake-recipe" class="section level2">
+<h2>My Pancake Recipe</h2>
+<div id="ingredients" class="section level3">
+<h3>Ingredients</h3>
 <ul>
-<li><a href="https://rmarkdown.rstudio.com/lesson-15.html">Cheat
-sheet</a></li>
-<li><a href="https://rmarkdown.rstudio.com/docs/">Home page with
-guides</a></li>
-<li><a href="https://bookdown.org/yihui/rmarkdown/">Reference
-book</a></li>
-</ul>
-<p>The below is a code chunk, but instead of using the <code>r</code>
-engine we’re creating and alert block that will make the question show
-up with a blue background in the HTML output. Unfortunately, this
-creates and error when exporting to PDF, so it can only be used for
-HTML.</p>
-<div class="alert alert-info">
-<h2 id="submission-instructions">
-Submission Instructions
-</h2>
-<p>
-rubric={mechanics:2}
-</p>
-<p>
-You receive mark for submitting your lab correctly, please follow these
-instructions:
-</p>
-<ul>
-<li>
-<a href="https://ubc-mds.github.io/resources_pages/general_lab_instructions/">Follow
-the general lab instructions</a>.
-</li>
-<li>
-<a href="https://github.com/UBC-MDS/public/tree/master/rubric">Click
-here to view a description of the rubrics used to grade the
-questions</a>.
-</li>
-<li>
-Push your <code>.Rmd</code> AND <strong>all the files</strong> you will
-create as part of the lab to your GitHub repository.
-<ul>
-<li>
-The reason for pushing all the files is that <code>.Rmd</code> does not
-contain the rendered output from running the cells. If someone is
-checking out your work there needs to be an HTML file to view the
-output, so it is good to get into this habit. - <code>.ipynb</code>
-renders nicely on GitHub, which is why we did not include the HTML file
-for previous labs.
-</li>
-</ul>
-</li>
-<li>
-Upload a <code>.Rmd</code> version of your assignment to Gradescope.
-</li>
-<li>
-Include a clickable link to your GitHub repo for the lab just below this
-cell (it should look something like this <a href="https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl" class="uri">https://github.ubc.ca/MDS-2022-23/DSCI_521_labX_yourcwl</a>.
-</li>
+<li><p>1 cup flour</p></li>
+<li><p>1 cup milk</p></li>
+<li><p>1 egg</p></li>
+<li><p>2 tsp baking powder</p></li>
+<li><p>2 pinches of salt</p></li>
+<li><p>2 tbsp oil or melted butter</p></li>
+<li><p>2 tbsp sugar</p></li>
 </ul>
 </div>
-<p>YOUR LAB GITHUB REPO LINK GOES HERE</p>
-<div id="editing-r-markdown-documents" class="section level2">
-<h2>Editing R Markdown documents</h2>
-<p>This document is called an R Markdown document. It is a literate code
-document, similar to Jupyter notebooks where you can write code and view
-its outputs. To start, let’s set our working directory by creating a new
-R Project for lab 4.</p>
-<div id="text-and-rendering-r-markdown-documents" class="section level3">
-<h3>Text and rendering R Markdown documents</h3>
-<p>In a R Markdown document any line of text not in a code chunk (like
-this line of text) will be formatted using Markdown. Similar to
-JupyterLab, you can also use HTML and LaTeX here to do more advanced
-formatting. To run a code chunk, you can press the green play button in
-the top right corner of the chunk.</p>
-<div class="alert alert-info">
-<h4 id="question-1">
-Question 1
-</h4>
-<p>
-rubric={correctness:1}
-</p>
-<p>
-To render the HTML files we are going to create, the first step is to
-activate GitHub pages.
-</p>
-</div>
-<p><a href="https://qurat-azim.github.io/repo-521/" class="uri">https://qurat-azim.github.io/repo-521/</a></p>
-<div class="alert alert-info">
-<h4 id="question-2">
-Question 2
-</h4>
-<p>
-rubric={mechanics:1}
-</p>
-<p>
-Create a new code chunk below using the r language engine that runs some
-R code (it does not need to be complicated, but it should have an
-output). Ensure that you can render/knit the document after you add that
-chunk.
-</p>
-</div>
-<pre class="r"><code>a &lt;- 1
-b &lt;- 3
-a + b</code></pre>
-<pre><code>## [1] 4</code></pre>
-<div class="alert alert-info">
-<h4 id="question-3">
-Question 3
-</h4>
-<p>
-rubric={mechanics:1}
-</p>
-<p>
-Create a new code chunk, and add a meaningful name to the code chunk.
-Try using the pop-up-like menu to navigate between the named code chunks
-Don’t forget to knit/render the document after you make this change to
-ensure everything is still working.
-</p>
-</div>
-<pre class="r"><code>a &lt;- 3
-b &lt;- 5
-print(a *b)</code></pre>
-<pre><code>## [1] 15</code></pre>
-<div class="alert alert-info">
-<h4 id="question-4">
-Question 4
-</h4>
-<p>
-rubric={mechanics:1,reasoning:1}
-</p>
-<p>
-Create a new code chunk that uses a code chunk option. Write out in your
-own words what the code chunk option is doing.
-</p>
-</div>
-<pre class="r"><code>5 * 15</code></pre>
-<pre><code>## [1] 75</code></pre>
-<p>The code chunk option is evaluating the computation in this code
-chuck. I am using <code>eval=TRUE</code> as my option and this evaluates
-the results of the code placed in the chunk. If I remove this option,
-the reults of <code>5 * 15</code> will not be evaluated or printed.</p>
-<div id="multiple-code-chunk-options" class="section level4">
-<h4>Multiple code chunk options</h4>
-<p>To have multiple code chunk options you separate them by a comma. For
-example, if in addition to suppressing warnings, we want to run the code
-but not output the results, then we can add the
-<code>include = FALSE</code> argument to the code chunk after the
-<code>warning = FALSE</code> option.</p>
-<div class="alert alert-info">
-<h4 id="question-5">
-Question 5
-</h4>
-<p>
-rubric={mechanics:1,reasoning:1}
-</p>
-<p>
-Create a new code chunk that uses at least two code chunk options. At
-least one must be different to the ones mentioned above. Write in your
-own words what each code chunk option is doing.
-</p>
-</div>
-<pre class="r"><code>a &lt;- 5
-b &lt;- 0
-
-if (b == 0) {
-  warning(&quot;Division by zero here!&quot;)
-}</code></pre>
-<pre><code>## Warning: Division by zero here!</code></pre>
-<pre class="r"><code>a + b</code></pre>
-<pre><code>## [1] 5</code></pre>
-<p>I am using two options: the <code>eval=TRUE</code> option evaluates
-the last line of code. The <code>warning=TRUE</code> option helps print
-a warning that might be encountered during running the code block.</p>
+<div id="method" class="section level3">
+<h3>Method</h3>
+<p>Mix all dry ingredients and then add in all wet. This will yield 1.5
+cups of batter Mix again. Spoon fourth cup fulls on a heated non-stick
+pan. Flip when bubbles apper. Cook on the other side for a minute. Take
+off the pan and enjoy</p>
+<pre class="r"><code>batter_quantity &lt;- function(n_batches) {
+  return(n_batches * 1.5)
+}
+batter_quantity(3)</code></pre>
+<pre><code>## [1] 4.5</code></pre>
 </div>
 </div>
-<div id="yaml-header-and-document-output-options" class="section level3">
-<h3>1.5. YAML Header and document output options</h3>
-<p>R Markdown files contains three types of content:</p>
-<ol style="list-style-type: decimal">
-<li>Plain text mixed with simple Markdown formatting.</li>
-<li>Code chunks surrounded by <code>```</code>.</li>
-<li>An (optional) YAML header surrounded by <code>---</code>.</li>
-</ol>
-<p>You have been introduced the first two types of content, but not the
-third (although you probably saw it at the top of this document). The
-(optional) YAML header, which is located at the very top of R Markdown
-files sets some general global parameters, including:</p>
-<ul>
-<li>title</li>
-<li>author</li>
-<li>output</li>
-<li>etc</li>
-</ul>
-<p><strong>Example YAML Header</strong></p>
-<pre><code>---
-title: &quot;Reproducible Data Science Report&quot;
-author: &quot;Florencia D&#39;Andrea&quot;
-date: &quot;September 4, 2022&quot;
-output: html_document
----</code></pre>
-<p>Most important from a workflow perspective is
-<strong>output</strong>. Possible output options include:</p>
-<ul>
-<li><code>output: html_document</code></li>
-<li><code>output: md_document</code></li>
-<li><code>output: pdf_document</code></li>
-<li><code>output: word_document</code></li>
-<li><code>output: xaringan::moon_reader</code> (xaringan presentation -
-html)</li>
-</ul>
-<div class="alert alert-info">
-<h4 id="question-6">
-Question 6
-</h4>
-<p>
-rubric={mechanics:1}
-</p>
-<p>
-Navigate to the YAML header at the very top of this document and edit it
-so that you include an <code>author</code> (yourself) and a
-<code>date</code> (lab due date). Include what you added below here as
-well as a fenced Markdown code block.
-</p>
-</div>
-<p>author: “Qurat-ul-Ain Azim”</p>
-<p>date: “October 1, 2022”</p>
-</div>
-<div id="creating-r-markdown-documents" class="section level3">
-<h3>Creating R Markdown documents</h3>
-<p>You can use the “File” menu inside RStudio to create new R Markdown
-documents by selecting: <strong>File &gt; New File &gt; R
-Markdown</strong> This will bring you to another menu where you can
-choose the type of output (don’t be afraid to pick something, you can
-always change the <code>output</code> type once you have the
-<code>.Rmd</code> file).</p>
-<p>To create a written report, we generally recommend using the default
-<code>output: html_document</code> as it is easier to read than PDF
-(note - LaTeX does not render nicely in such documents sadly, so if you
-are using a lot of LaTeX then you may want to choose
-<code>output: pdf_document</code>). If you want to create an
-<code>.md</code> file to publish on GitHub, it is recommend to instead
-use <code>output: github_document</code>. To get this from the menu
-above you need to navigate to the “From Template” option on the left
-panel and then select “GitHub Document (Markdown)”.</p>
-<div class="alert alert-info">
-<h4 id="question-7">
-Question 7
-</h4>
-<p>
-rubric={mechanics:2}
-</p>
-<p>
-1 - Create a new RMarkdown report (a different file than this one) in
-the same directory as this RMarkdown file. Use
-<code>html_document</code> as the <code>output</code>. After you have
-rendered it, paste the link to the HTML output as a link to your GitHub
-repository (remember to push all your files!)
-</p>
-<p>
-2 - Then, navigate to the YAML header at the very top of that
-<code>.Rmd</code> document and edit it so that the <code>output</code>
-is <code>pdf_document</code>. Then knit/render the document. Note the
-different output. Add and commit that rendered both the
-<code>.html</code> and <code>.pdf</code> files to the GitHub repository
-for this lab and paste the two links below this question.
-</p>
-</div>
-<p><a href="https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_qazim1/blob/master/Q7-Task.html" class="uri">https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_qazim1/blob/master/Q7-Task.html</a></p>
-<p><a href="https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_qazim1/blob/master/Q7-Task.pdf" class="uri">https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_qazim1/blob/master/Q7-Task.pdf</a></p>
-<div class="alert alert-info">
-<h4 id="question-8">
-Question 8
-</h4>
-<p>
-rubric={mechanics:6}
-</p>
-<ol style="list-style-type: decimal">
-<li>
-<p>
-Go back to the <code>.Rmd</code> file you created in question 7, and
-include at least two Markdown text sections (each should have a header)
-and at least two separate code chunks in it (these can be really
-simple). Save the new R Markdown document and give it a new meaningful
-name.
-</p>
-</li>
-<li>
-<p>
-Render/knit the new R Markdown document to get an <code>.html</code>
-file. Put the <code>.Rmd</code> document and the rendered
-<code>.html</code> file under version control using Git, and push/upload
-the file to your GitHub repository for this homework. Paste a link to
-these files as your answer below.
-</p>
-</li>
-</ol>
-</div>
-<p>YOUR ANSWER GOES HERE</p>
-<div class="alert alert-info">
-<h4 id="question-9-optional">
-Question 9 (Optional)
-</h4>
-<p>
-rubric={mechanics:1,reasoning:1}
-</p>
-<ol style="list-style-type: decimal">
-<li>
-Take the R Markdown report created in Question 8 and change the output
-to <code>github_document</code> and render it. Put the rendered
-<code>.md</code> file under version control using Git, and push/upload
-the file to your GitHub repository for this homework. Try to look at the
-file on GitHub.ubc.ca in your homework repo? What do you see? How is it
-rendered?
-</li>
-</ol>
-</div>
-<p>YOUR ANSWER GOES HERE</p>
-<div class="alert alert-info">
-<h4 id="question-10">
-Question 10
-</h4>
-<p>
-rubric={mechanics:6}
-</p>
-<ol style="list-style-type: decimal">
-<li>
-Create a presentation using RStudio. Do this in a different file than
-this one but in the same directory as this RMarkdown file. You can use
-xaringan or Quarto to create the slides. <a href="https://pages.github.ubc.ca/MDS-2022-23/DSCI_521_platforms-dsci_students/materials/lectures/8-rmarkdown-quarto-slides-ghpages.html">On
-the book</a> you will find links that will guide you on how to create
-each type of slide. If you are not sure which one to use, it is safer to
-use Xaringan as Quarto is quite new and you will have to learn how to
-use <code>.qmd</code> files. But if you want to explore Quarto, we will
-accept both options (Xaringan or Quarto slides) as correct. Give this
-file a meaningful name.
-</li>
-<li>
-Create at least 4 slides. At least two slides must include a code chunk
-or cell (these can be really simple). Save the new document.
-</li>
-<li>
-Render/knit the new document to get a <code>html</code> presentation
-file.
-</li>
-<li>
-Put the new document and the rendered <code>.html</code> file under
-version control using Git, and push/upload the file to your GitHub
-repository for this lab
-</li>
-<li>
-Activate GitHub pages and paste the link below.
-</li>
-</ol>
-</div>
-<p>YOUR ANSWER GOES HERE</p>
-<div class="alert alert-info">
-<h4 id="challenging-question-11">
-(Challenging) Question 11
-</h4>
-<p>
-rubric={reasoning}
-</p>
-<p>
-In a paragraph or two, compare and contrast the use of reproducible
-tools (e.g., R Markdown and Jupyter) and non-reproducible tools (Word,
-Powerpoint, Keynote, etc) for presentations and reports. Include
-advantages and disadvantages for each.
-</p>
-</div>
-<p>YOUR ANSWER GOES HERE</p>
-</div>
+<div id="measuring-flour" class="section level2">
+<h2>Measuring Flour</h2>
+<p>The best way to measure flour for pancakes and cakes is to sccop out
+using cups and then level with a knife. ! cup of flour should equal 120
+grams on scale. Below, we convert flour from cups to grams.</p>
+<pre class="r"><code>cup_to_gram &lt;- function(cups) {
+  return(cups * 120)
+}
+cup_to_gram(5)</code></pre>
+<pre><code>## [1] 600</code></pre>
 </div>
 
 
