@@ -1,0 +1,61 @@
+---
+title: "My presentation"
+author: "Qurat-ul-Ain  Azim"
+date: "2022-09-30"
+output: 
+  xaringan::moon_reader:
+    css: [metropolis, metropolis-fonts]
+---
+
+
+# Arithmatic
+
+## Operations
+
+- addition
+- subtraction
+- multiplication
+- division
+
+---
+
+# Try some!
+
+```{r eval=TRUE}
+a <- 1
+b <- 3.5
+
+a + b
+a - b
+a * b
+a/b
+```
+---
+
+# Fun with `R`
+
+Let's make a function in `R` that:
+
+- adds two numbers
+- subtracts two numbers
+- multiplies two numbers
+- divides them!
+
+---
+
+# The function!
+
+```{r, eval=TRUE}
+
+answers = numeric(4)
+fun_ops <- function(a, b) {
+  answers[1] = a + b
+  answers[2] = a - b
+  answers[3] = a * b
+  answers[4] = a / b
+  return(answers)
+}
+
+fun_ops(2, -4)
+
+```
