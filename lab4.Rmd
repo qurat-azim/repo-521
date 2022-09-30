@@ -326,7 +326,7 @@ rubric={mechanics:6}
 5. Activate GitHub pages and paste the link below.
 ```
 
-YOUR ANSWER GOES HERE
+https://github.ubc.ca/MDS-2022-23/DSCI_521_lab4_qazim1/blob/master/Q8-Task.html
 
 ```{block, type="alert alert-info"}
 #### (Challenging) Question 11
